@@ -15,8 +15,8 @@ textBtn.addEventListener('click',function(){
 //task 2b
 function changeBGColor(event){
     var body = document.getElementsByTagName('body')[0]
-    if(event.target.innerText == "Red"){
-        body.style.backgroundColor = 'red'
+    if(event.target.innerText == "Pink"){
+        body.style.backgroundColor = '#FF1493'
     }
     if(event.target.innerText == "Green"){
         body.style.backgroundColor = 'green'
@@ -27,4 +27,15 @@ function changeBGColor(event){
 function redirectToGoogle(){
     window.location.href = "https://www.google.com/";
 }
+
+var getGoogle = document.getElementById('getGoogle');
+getGoogle.addEventListener('click',redirectToGoogle);
+
 /* Task 4 using jQuery */
+
+//task 4a
+
+$('#addText4').click(function(event){
+    var paragraph = $('<p>').text('Hello World')
+    $('#task4a').append(paragraph)
+})
