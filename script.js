@@ -40,7 +40,14 @@ $('#addText4').click(function(event){
     $('#task4a').append(paragraph)
 })
 
+//task 4b
 function changeBG(event){
     var color = event.target.innerText.toLowerCase();
     $('body').css('background-color',color)
 }
+
+//task 4c
+$('#sum').click(function(event){
+    var sum = Number($('#num1').val())+Number($('#num2').val());
+    $('#answer').text(sum);
+})
